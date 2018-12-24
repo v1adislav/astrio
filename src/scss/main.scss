@@ -3,3 +3,46 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.slider-container{
+	display: flex;
+	position: relative;
+	margin: 5rem auto;
+	box-shadow: 0px 0px 5px rgba(58,58,58,0.35);
+	max-width: 500px;
+	height: 230px;
+	ul{
+		list-style: none;
+	}
+	a{
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+		position: absolute;
+		top:80%;
+	    text-decoration: none;
+	    background: #3a3a3a;
+	    width: 40px;
+	    height: 40px;
+	    border-radius: 3px;
+	}
+	.next-slide{
+		right: 8px;
+		&:after{
+			content: "";
+			position: absolute;
+			background: url(../img/next.png);
+			width: 14px;
+  			height: 22px;
+		}
+	}
+	.prev-slide{
+		left: 8px;
+		&:after{
+			content: "";
+			position: absolute;
+			background: url(../img/prev.png);
+			width: 14px;
+  			height: 22px;
+		}
+	}
+}
