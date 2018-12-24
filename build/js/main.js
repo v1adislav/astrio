@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".skills-counter").easyPieChart({barColor:"#606caf",trackColor:"#fff",scaleColor:!1,lineWidth:3,lineCap:"circle"})});
